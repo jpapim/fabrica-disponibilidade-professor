@@ -1,17 +1,40 @@
-<main class="text-center">
-  <form class="form-signin">
-    <img class="mb-4 img-fluid" src="../../../assets/images/logo_escola.png" alt="logo-projecao">
-    <h1 class="h3 mb-3 font-weight-normal">Efetue seu login.</h1>
-    <label for="inputEmail" class="sr-only">E-mail</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
-    <label for="inputPassword" class="sr-only">Senha</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-    <div class="checkbox mb-3">
-      <label>
-        <a href="http://xvideos.com">Esqueci minha senha</a>
-      </label>
+<section>
+  <div class="container col-sm-10 col-md-7 col-lg-5 col-xl-4 card-login-centralizado">
+      <div class="card">
+        <div class="card-body">
+          <div class="container text-center">
+            <img class="img-fluid" src="assets/img/logo_escola.png">
+          </div>
+          <br>
+          <div class="container col-sm-12 col-md-12 col-lg-11 col-xl-11">
+            <form [formGroup]="loginForm">
+
+              <div class="md-form container col-10">
+                
+                <input type="text" formControlName="defaultFormEmail" id="defaultForm-email" class="form-control" mdbInputDirective>
+                <label for="defaultForm-email"><i class="fa fa-envelope grey-text"></i>&nbsp;&nbsp;&nbsp;Digite o seu email</label>
+              </div>
+
+              <div class="md-form container col-10">
+                
+                <input type="password" formControlName="defaultFormPass" id="defaultForm-pass" class="form-control" mdbInputDirective>
+                <label for="defaultForm-pass"><i class="fa fa-lock grey-text"></i>&nbsp;&nbsp;&nbsp;Digite sua sennha</label>
+              </div>
+
+              <div class="text-center">
+                  <button  type="submit" class="btn btn-sm btn-rounded color-primary col-6" mdbWavesEffect>Entrar</button>
+              </div>
+            </form>
+          </div>
+          <br>
+          <div class="container text-center font-weight-normal">
+            <a href="#">Esqueceu sua senha?</a>
+          </div>
+        </div>
+        <div class="card-footer white text-muted text-center">
+          <p class="mb-0">
+            <i class="fa fa-copyright"></i> 2018 Fábrica de Software - UniProjeção</p>
+        </div>
+      </div>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2018 Fábrica de Software - Campus II</p>
-  </form>
-</main>
+</section>
