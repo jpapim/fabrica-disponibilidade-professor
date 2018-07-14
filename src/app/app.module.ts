@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RouterModule } from '../../node_modules/@angular/router';
 import { ROUTES } from './app.routes';
+import { ReactiveFormsModule } from '../../node_modules/@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ROUTES } from './app.routes';
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
