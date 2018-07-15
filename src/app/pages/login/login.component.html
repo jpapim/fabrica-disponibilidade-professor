@@ -1,41 +1,41 @@
-<section>
-  <div class="container col-sm-10 col-md-7 col-lg-5 col-xl-4 card-login-centralizado">
+<section class="container">
+  <div class="card-login-centralizado">
+  <div class="col s10 m7 l5 xl4">
     <div class="card">
-      <div class="card-body">
-        <div class="container text-center">
-          <img class="img-fluid" src="assets/img/logo_escola.png">
+      <div class="card-content">
+        <div class="center-align">
+          <img class="responsive-img" src="assets/img/logo_escola.png">
         </div>
-        <br>
-        <div class="container col-sm-12 col-md-12 col-lg-11 col-xl-11">
+        <div class="row"></div>
+        <div class="col s12 m12 l11 xl11">
           <form [formGroup]="loginForm" (ngSubmit)="teste()">
-            <p class="h5 text-center mb-4">Sys DP</p>
-
-            <div class="md-form">
-              <i class="fa fa-envelope prefix grey-text"></i>
-              <input type="text" formControlName="defaultFormEmail" id="defaultForm-email" class="form-control" mdbInputDirective>
-              <label for="defaultForm-email">Digite o seu email</label>
+            <span class="card-title center-align">Sys DP</span>
+            <div class="input-field">
+              <input type="text" formControlName="defaultFormEmail" id="defaultForm-email" class="form-control">
+              <label for="defaultForm-email">
+                <i class="fa fa-envelope grey-text"></i> Digite o seu email
+              </label>
             </div>
-            <div class="row"></div>
-            <div class="md-form">
-              <i class="fa fa-lock prefix grey-text"></i>
-              <input type="password" formControlName="defaultFormPass" id="defaultForm-pass" class="form-control" mdbInputDirective>
-              <label for="defaultForm-pass">Digite sua senha</label>
+            <div class="input-field">
+              <input type="password" formControlName="defaultFormPass" id="defaultForm-pass" class="form-control">
+              <label for="defaultForm-pass"><i class="fa fa-lock grey-text"></i> Digite sua senha</label>
             </div>
 
-            <div class="text-center">
+            <div class="center-align">
               <button [disabled]="loginForm.invalid" type="submit" class="btn btn-sm btn-rounded color-primary col-6" mdbWavesEffect>Entrar</button>
             </div>
           </form>
         </div>
         <br>
-        <div class="container text-center font-weight-normal">
+        <div class="container center-align font-weight-normal">
           <a href="#">Esqueceu sua senha?</a>
         </div>
       </div>
-      <div class="card-footer white text-muted text-center">
+      <div class="card-action white text-muted center-align">
         <p class="mb-0">
           <i class="fa fa-copyright"></i> 2018 Fábrica de Software - UniProjeção</p>
       </div>
     </div>
   </div>
+</div>
 </section>
