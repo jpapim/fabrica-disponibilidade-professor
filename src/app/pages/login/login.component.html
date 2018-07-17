@@ -1,41 +1,38 @@
-<section class="container">
-  <div class="card-login-centralizado">
-  <div class="col s10 m7 l5 xl4">
-    <div class="card">
-      <div class="card-content">
-        <div class="center-align">
-          <img class="responsive-img" src="assets/img/logo_escola.png">
-        </div>
-        <div class="row"></div>
-        <div class="col s12 m12 l11 xl11">
-          <form [formGroup]="loginForm" (ngSubmit)="teste()">
-            <span class="card-title center-align">Sys DP</span>
-            <div class="input-field">
-              <input type="text" formControlName="defaultFormEmail" id="defaultForm-email" class="form-control">
-              <label for="defaultForm-email">
-                <i class="fa fa-envelope grey-text"></i> Digite o seu email
-              </label>
-            </div>
-            <div class="input-field">
-              <input type="password" formControlName="defaultFormPass" id="defaultForm-pass" class="form-control">
-              <label for="defaultForm-pass"><i class="fa fa-lock grey-text"></i> Digite sua senha</label>
-            </div>
-
-            <div class="center-align">
-              <button [disabled]="loginForm.invalid" type="submit" class="btn btn-sm btn-rounded color-primary col-6" mdbWavesEffect>Entrar</button>
-            </div>
-          </form>
-        </div>
-        <br>
-        <div class="container center-align font-weight-normal">
-          <a href="#">Esqueceu sua senha?</a>
-        </div>
+<div class="row">
+  <div class="card col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+    <div class="card-content">
+      <div class="center-align">
+        <img class="responsive-img" src="assets/img/logo_escola.png">
       </div>
-      <div class="card-action white text-muted center-align">
-        <p class="mb-0">
-          <i class="fa fa-copyright"></i> 2018 Fábrica de Software - UniProjeção</p>
+      <div class="row"></div>
+      <div class="col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
+        <form [formGroup]="loginForm" (ngSubmit)="teste()">
+          <span class="card-title center-align">Sys DP</span>
+          <div class="input-field">
+            <input type="text" formControlName="defaultFormEmail" id="defaultForm-email" class="form-control">
+            <label for="defaultForm-email">
+              <i class="fa fa-envelope grey-text"></i> Digite o seu email
+            </label>
+          </div>
+          <div class="input-field">
+            <input type="password" formControlName="defaultFormPass" id="defaultForm-pass" class="form-control">
+            <label for="defaultForm-pass">
+              <i class="fa fa-lock grey-text"></i> Digite sua senha</label>
+          </div>
+          <div class="center-align">
+            <button [disabled]="loginForm.invalid" type="submit" class="btn btn-rounded color-primary col s6 offset-s3">Entrar</button>
+          </div>
+        </form>
       </div>
+      <div class="row"></div>
+      <div class="container center-align font-weight-normal">
+        <a href="#">Esqueceu sua senha?</a>
+      </div>
+    </div>
+    <div class="card-action white text-muted center-align">
+      <p>
+        <i class="fa fa-copyright"></i> 2018 Fábrica de Software - UniProjeção
+      </p>
     </div>
   </div>
 </div>
-</section>
