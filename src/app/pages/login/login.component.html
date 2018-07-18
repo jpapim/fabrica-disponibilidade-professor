@@ -8,17 +8,8 @@
       <div class="col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
         <form [formGroup]="loginForm" (ngSubmit)="teste()">
           <span class="card-title center-align">Sys DP</span>
-          <div class="input-field">
-            <input type="text" formControlName="defaultFormEmail" id="defaultForm-email" class="form-control">
-            <label for="defaultForm-email">
-              <i class="fa fa-envelope grey-text"></i> Digite o seu email
-            </label>
-          </div>
-          <div class="input-field">
-            <input type="password" formControlName="defaultFormPass" id="defaultForm-pass" class="form-control">
-            <label for="defaultForm-pass">
-              <i class="fa fa-lock grey-text"></i> Digite sua senha</label>
-          </div>
+          <pj-input-text-field [input]="emailInput"></pj-input-text-field>
+          <pj-input-text-field [input]="senhaInput"></pj-input-text-field>
           <div class="center-align">
             <button [disabled]="loginForm.invalid" type="submit" class="btn btn-rounded color-primary col s6 offset-s3">Entrar</button>
           </div>
