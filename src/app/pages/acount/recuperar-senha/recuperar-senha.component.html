@@ -1,0 +1,17 @@
+<div class="col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
+    <form [formGroup]="recuperaSenhaForm" (ngSubmit)="teste()">
+      <div class="input-field">
+        <input type="text" formControlName="inputEmailRecuperacao" id="inputEmailRecuperacao" class="form-control">
+        <label for="inputEmailRecuperacao">
+          <i class="fa fa-envelope grey-text"></i> Digite o seu email para recuperação
+        </label>
+      </div>
+      <div class="center-align">
+        <button [disabled]="recuperaSenhaForm.invalid" type="submit" class="btn btn-rounded color-primary col s6 offset-s3">RECUPERAR SENHA</button>
+      </div>
+    </form>
+  </div>
+  <div class="row"></div>
+  <div class="container center-align font-weight-normal">
+    <a [routerLink]="['../entrar']">Voltar</a>
+  </div>
