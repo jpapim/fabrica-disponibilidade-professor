@@ -10,6 +10,9 @@ import { RecuperarSenhaComponent } from './pages/acount/recuperar-senha/recupera
 import { AcountComponent } from './pages/acount/acount.component';
 import { EditarComponent } from './pages/acount/editar/editar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { HomeComponent } from './pages/home/home.component';
     RecuperarSenhaComponent,
     AcountComponent,
     EditarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
