@@ -1,18 +1,40 @@
 <nav>
-  <div class="nav-wrapper white">
-    <div class="brand-logo"><img class="responsive-img" src="assets/img/logo_escola.png"></div>
-    <div class="brand-logo hide-on-med-and-down center text-dark bold">Disponibilidade Professor</div>
-    <ul class="right hide-on-med-and-down text-dark bold">
-      <li><a href="sass.html" class="menu-item">Sass</a></li>
-      <li><a href="badges.html" class="menu-item">Components</a></li>
-      <li><a class="dropdown-trigger menu-item" data-target="dropdown-menu"><i class="fas fa-user fa-1-3x"></i></a></li>
-    </ul>
-  </div>
+	<div class="nav-wrapper white">
+		<div class="brand-logo">
+			<img class="responsive-img" src="assets/img/logo_escola.png">
+		</div>
+		<div class="brand-logo hide-on-med-and-down center text-primary">Disponibilidade Professor</div>
+		<ul class="right hide-on-med-and-down text-primary bold">
+			<li><a href="sass.html" class="menu-item">Sass</a></li>
+			<li><a href="badges.html" class="menu-item">Components</a></li>
+			<li><a class="dropdown-trigger menu-item" data-target="dropdown-menu"><i class="fas fa-user fa-1-3x"></i></a></li>
+		</ul>
+		<a data-target="mobile-demo" class="sidenav-trigger text-primary "><i class="fas fa-bars"></i></a>
+	</div>
 </nav>
-
-<ul id="dropdown-menu" class="dropdown-content">
-  <li><a href="#!"><i class="fas fa-user-cog fa-1x"></i> Minha conta</a></li>
-  <li><a href="#!"><i class="fas fa-cog fa-1x"></i> Configurações</a></li>
-  <li class="divider"></li>
-  <li><a href="#!"><i class="fas fa-sign-out-alt fa-1x"></i> Sair</a></li>
+<ul class="sidenav text-primary" id="mobile-demo">
+	<li><a href="sass.html" class="menu-item">Sass</a></li>
+	<li><a href="badges.html" class="menu-item">Components</a></li>
+	<li>
+		<ul class="collapsible">
+		    <li>
+		      	<div class="collapsible-header"><i class="fas fa-user fa-7x user-style"></i> Marcos<i class="fas fa-caret-down fa-xs caret-style"></i></div>
+		      	<div class="collapsible-body center bold">
+		      		<a class="text-primary"><i class="fas fa-user-cog fa-1x"></i> Minha conta</a>
+		      		<div class="divider"></div>
+					<a class="text-primary"><i class="fas fa-cog fa-1x"></i> Configurações</a>
+					<div class="divider"></div>
+					<a class="text-primary"><i class="fas fa-sign-out-alt fa-1x"></i> Sair </a>
+				</div>
+		    </li>
+		</ul>
+	</li>
 </ul>
+<ul id="dropdown-menu" class="dropdown-content text-primary">
+	<li><a href="#!"><i class="fas fa-user-cog fa-1x"></i> Minha conta</a></li>
+	<li><a href="#!"><i class="fas fa-cog fa-1x"></i> Configurações</a></li>
+	<li class="divider"></li>
+	<li><a href="#!"><i class="fas fa-sign-out-alt fa-1x"></i> Sair</a></li>
+</ul>
+
+

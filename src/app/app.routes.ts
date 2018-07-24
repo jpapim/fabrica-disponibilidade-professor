@@ -4,6 +4,7 @@ import { RecuperarSenhaComponent } from './pages/acount/recuperar-senha/recupera
 import { AcountComponent } from './pages/acount/acount.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
 
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'acount', pathMatch: 'full' },
@@ -22,5 +23,13 @@ export const ROUTES: Routes = [
         children: [
             { path: '', component: DashboardComponent },
         ]
+    },
+    {
+      path: 'notfound',
+      component: NotfoundComponent
+    },
+    {
+        path: '**',
+        redirectTo: 'notfound'
     }
 ];
