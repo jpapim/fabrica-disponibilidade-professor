@@ -1,0 +1,36 @@
+
+<span class="card-title center">Dados Pessoais</span>
+<form [formGroup]="dadosPessoaisForm" (ngSubmit)="teste()">
+	<div class="input-field">
+		<input type="text" formControlName="inputNome" id="inputNome" class="form-control"/>
+		<label for="inputNome">
+			Nome
+		</label>
+	</div>
+	<div class="input-field">
+		<input type="text" formControlName="inputSobrenome" id="inputSobrenome" class="form-control"/>
+		<label for="inputSobrenome">
+			Sobrenome
+		</label>
+	</div>
+	<div class="input-field">
+		<input type="text" formControlName="inputApelido" id="inputApelido" class="form-control"/>
+		<label for="inputApelido">
+			Apelido
+		</label>
+	</div>
+	<div class="input-field">
+		<input type="text" formControlName="inputTelefone" id="inputTelefone" class="form-control"/>
+		<label for="inputTelefone">
+			<i class="fa fa-phone"></i>
+			Telefone
+		</label>
+	</div>
+	<div class="input-field">
+		<input type="text" formControlName="inputCelular" id="inputCelular" class="form-control"/>
+		<label for="inputCelular">
+			<i class="fa fa-mobile-alt"></i>
+			Celular
+		</label>
+	</div>
+</form>

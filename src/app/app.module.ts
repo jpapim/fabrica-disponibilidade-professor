@@ -14,6 +14,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { CadastroComponent } from './pages/acount/cadastro/cadastro.component';
+import { FormDadosPessoaisComponent } from './components/forms/form-dados-pessoais/form-dados-pessoais.component';
+import { FormDadosProfissionaisComponent } from './components/forms/form-dados-profissionais/form-dados-profissionais.component';
+import { FormDisciplinasMinistradasComponent } from './components/forms/form-disciplinas-ministradas/form-disciplinas-ministradas.component';
+import { FormDisciplinasDeInteresseComponent } from './components/forms/form-disciplinas-de-interesse/form-disciplinas-de-interesse.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     FooterComponent,
     HeaderComponent,
     DashboardComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CadastroComponent,
+    FormDadosPessoaisComponent,
+    FormDadosProfissionaisComponent,
+    FormDisciplinasMinistradasComponent,
+    FormDisciplinasDeInteresseComponent
   ],
   imports: [
     BrowserModule,
