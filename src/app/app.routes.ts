@@ -8,6 +8,7 @@ import { FormDadosPessoaisComponent } from './components/forms/form-dados-pessoa
 import { CadastroComponent } from './pages/acount/cadastro/cadastro.component';
 import { EditarComponent } from './pages/acount/editar/editar.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { FormDadosProfissionaisComponent } from './components/forms/form-dados-profissionais/form-dados-profissionais.component';
 
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'acount', pathMatch: 'full' },
@@ -32,7 +33,8 @@ export const ROUTES: Routes = [
               component: EditarComponent,
               children: [
                 { path: '', redirectTo: 'dados-pessoais', pathMatch: 'full' },
-                { path: 'dados-pessoais', component: FormDadosPessoaisComponent }
+                { path: 'dados-pessoais', component: FormDadosPessoaisComponent },
+                { path: 'dados-profissionais', component: FormDadosProfissionaisComponent }
               ]
             },
         ]

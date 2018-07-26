@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '../../../../../node_modules/@angular/forms';
 
 @Component({
   selector: 'pj-form-dados-profissionais',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormDadosProfissionaisComponent implements OnInit {
 
-  constructor() { }
+  dadosProfissionaisForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.configurationForm();
   }
 
+  configurationForm() {
+    this.dadosProfissionaisForm = this.formBuilder.group({
+      inputGraduacao: [ null, [Validators.required, Validators.minLength(3)]],
+      inputDataConclusao: [ null, [Validators.required]],
+      inputMaiorTitulacao: [ null, [Validators.required]],
+      inputNomeTitulacaoAndamento: [ null, [Validators.required, Validators.minLength(3)]],
+      inputEstimativaTermino: [ null, [Validators.required]]
+    });
+  }
+
+  teste() {
+    console.log(this.dadosProfissionaisForm.value);
+  }
 }
