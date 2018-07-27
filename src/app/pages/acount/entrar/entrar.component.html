@@ -1,23 +1,21 @@
 <div class="col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
-  <form [formGroup]="loginForm" (ngSubmit)="teste()">
-    <div class="input-field">
-      <input type="text" formControlName="inputEmail" id="inputEmail" class="form-control">
-      <label for="inputEmail">
-        <i class="fa fa-envelope grey-text"></i> Digite o seu email
-      </label>
-    </div>
-    <div class="input-field">
-      <input type="password" formControlName="inputSenha" id="inputSenha" class="form-control">
-      <label for="inputSenha">
-        <i class="fa fa-lock grey-text"></i> Digite sua senha
-      </label>
-    </div>
-    <div class="center-align">
-      <button [disabled]="loginForm.invalid"  [routerLink]="['/home']" type="submit" class="btn btn-rounded color-primary col s6 offset-s3">Entrar</button>
-    </div>
-  </form>
+	<form [formGroup]="loginForm" (ngSubmit)="teste()">
+		<div class="input-field">
+			<i class="fa fa-envelope grey-text prefix"></i>
+			<label for="inputEmail">Email</label>
+			<input type="text" formControlName="inputEmail" id="inputEmail" class="form-control"/>
+		</div>
+		<div class="input-field">
+			<i class="fa fa-lock grey-text prefix"></i>
+			<label for="inputSenha">Senha</label>
+			<input type="password" formControlName="inputSenha" id="inputSenha" class="form-control"/>
+		</div>
+		<div class="center-align">
+			<button [disabled]="loginForm.invalid" [routerLink]="['/home']" type="submit" class="btn btn-rounded color-primary col s6 offset-s3">Entrar</button>
+		</div>
+	</form>
 </div>
 <div class="row"></div>
 <div class="container center-align font-weight-normal">
-  <a [routerLink]="['../recuperar-senha']">Esqueceu sua senha?</a>
+	<a [routerLink]="['../recuperar-senha']">Esqueceu sua senha?</a>
 </div>

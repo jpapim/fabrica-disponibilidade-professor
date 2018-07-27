@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'pj-header',
@@ -10,6 +12,9 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.dropdown-trigger').dropdown();
+    $('.sidenav').sidenav();
+    $('.collapsible').collapsible();
   }
 
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '../../../../../node_modules/@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'pj-form-dados-profissionais',
@@ -13,6 +15,7 @@ export class FormDadosProfissionaisComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+     $('.datepicker').datepicker();
     this.configurationForm();
   }
 

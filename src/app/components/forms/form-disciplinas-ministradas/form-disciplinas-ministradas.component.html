@@ -1,3 +1,157 @@
-<p>
-  form-disciplinas-ministradas works!
-</p>
+
+<span class="card-title center">Dados Pessoais</span>
+<form [formGroup]="disciplinasMinistradasForm" class="row">
+	<div class="row">
+		<div class="input-field col s12 m12 l12 xl12">
+			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">Carga
+				horária semanal(total) no semestre anterior</label> <input type="text"
+				formControlName="inputNome" id="inputNome" class="form-control"
+				data-length="10" />
+		</div>
+	</div>
+	<div class="row">Carga horária por unidade no semestre anterior</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">
+			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">CEI</label>
+			<input type="text" formControlName="inputNome" id="inputNome"
+				class="form-control" data-length="10" />
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">SOB</label>
+			<input type="text" formControlName="inputNome" id="inputNome"
+				class="form-control" data-length="10" />
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">TGN</label>
+			<input type="text" formControlName="inputNome" id="inputNome"
+				class="form-control" data-length="10" />
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">GUA</label>
+			<input type="text" formControlName="inputNome" id="inputNome"
+				class="form-control" data-length="10" />
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">TAG</label>
+			<input type="text" formControlName="inputNome" id="inputNome"
+				class="form-control" data-length="10" />
+		</div>
+	</div>
+	<div class="row">Unidade das disciplinas ministradas no semestre anterior</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">MATUTINO</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Segunda</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Terça</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Quarta</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Quinta</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Sexta</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">NOTURNO</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Segunda</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Terça</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Quarta</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Quinta</label>
+		</div>
+		<div class="input-field col s2 m2 l2 xl2">
+			<select id="segunda">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="segunda">Sexta</label>
+		</div>
+	</div>
+</form>

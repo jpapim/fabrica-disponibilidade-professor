@@ -20,8 +20,12 @@ export class FormDadosPessoaisComponent implements OnInit {
       inputNome: [ null, [Validators.required, Validators.minLength(3)]],
       inputSobrenome: [ null, [Validators.required, Validators.minLength(3)]],
       inputApelido: [ null, [Validators.required, Validators.minLength(3)]],
+      inputEndereco: [ null, [Validators.required, Validators.minLength(3)]],
+      inputCidade: [ null, [Validators.required, Validators.minLength(3)]],
+      inputCEP: [ null, [Validators.required, Validators.minLength(3)]],
       inputTelefone: [ null, [Validators.required, Validators.minLength(3)]],
-      inputCelular: [ null, [Validators.required, Validators.minLength(3)]]
+      inputCelular: [ null, [Validators.required, Validators.minLength(3)]],
+      inputEmailPessoal: [ null, [Validators.required, Validators.minLength(3)]]
     });
   }
 

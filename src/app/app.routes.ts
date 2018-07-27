@@ -4,11 +4,12 @@ import { RecuperarSenhaComponent } from './pages/acount/recuperar-senha/recupera
 import { AcountComponent } from './pages/acount/acount.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { FormDadosPessoaisComponent } from './components/forms/form-dados-pessoais/form-dados-pessoais.component';
 import { CadastroComponent } from './pages/acount/cadastro/cadastro.component';
 import { EditarComponent } from './pages/acount/editar/editar.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
-import { FormDadosProfissionaisComponent } from './components/forms/form-dados-profissionais/form-dados-profissionais.component';
+import { FormDadosPessoaisComponent } from './components/forms/form-dados-pessoais/form-dados-pessoais.component';
+import { FormDadosProfissionaisComponent , } from './components/forms/form-dados-profissionais/form-dados-profissionais.component';
+import { FormDisciplinasMinistradasComponent } from './components/forms/form-disciplinas-ministradas/form-disciplinas-ministradas.component';
 
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'acount', pathMatch: 'full' },
@@ -34,7 +35,8 @@ export const ROUTES: Routes = [
               children: [
                 { path: '', redirectTo: 'dados-pessoais', pathMatch: 'full' },
                 { path: 'dados-pessoais', component: FormDadosPessoaisComponent },
-                { path: 'dados-profissionais', component: FormDadosProfissionaisComponent }
+                { path: 'dados-profissionais', component: FormDadosProfissionaisComponent },
+                { path: 'disciplinas-ministradas', component: FormDisciplinasMinistradasComponent }
               ]
             },
         ]

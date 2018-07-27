@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'pj-form-disciplinas-ministradas',
@@ -10,6 +12,7 @@ export class FormDisciplinasMinistradasComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('select').formSelect();
   }
 
 }

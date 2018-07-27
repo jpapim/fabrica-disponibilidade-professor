@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'pj-form-disciplinas-de-interesse',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormDisciplinasDeInteresseComponent implements OnInit {
 
-  constructor() { }
+disciplinasMinistradasForm: FormGroup;
+  
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    
+  }
+  
+  configurarFormulario(){
+    this.disciplinasMinistradasForm = this.formBuilder.group({
+      
+    });
   }
 
 }
