@@ -2,84 +2,78 @@
   Dados Profissionais</span>
 <form [formGroup]="dadosProfissionaisForm" (ngSubmit)="teste()">
   <div class="row">
-    <div class="col s8">
-      <label for="inputGraduacao">Graduação</label>
+    <div class="input-field col s6">
       <input type="text" formControlName="inputGraduacao" id="inputGraduacao" class="form-control" />
+      <label for="inputGraduacao">Graduação</label>
     </div>
-    <div class="col s4">
-      <label for="inputDataConclusao">Data de Conclusão</label>
+    <div class="input-field col s4">
       <input type="text" class="datepicker" formControlName="inputDataConclusao" id="inputDataConclusao">
+      <label for="inputDataConclusao">Data de Conclusão</label>
     </div>
   </div>
   <div class="row">
-    <div class="col s12">
-      <label for="inputMaiorTitulacao">Maior titulação obtida</label>
+    <div class="input-field col s5">
       <input type="text" formControlName="inputMaiorTitulacao" id="inputMaiorTitulacao" class="form-control" />
+      <label for="inputMaiorTitulacao">Maior titulação obtida</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="col s4 center-align">
+    <div class="input-field col s3">
       <label for="inputTitulacaoAndamento">
         <input type="checkbox" name="inputTitulacaoAndamento" id="inputTitulacaoAndamento" class="filled-in">
         <span>Titulação em andamento?</span>
       </label>
     </div>
-    <div class="col s8">
-      <label for="inputNomeTitulacaoAndamento">Informe qual</label>
+  </div>
+  <div class="row">
+    <div class="input-field col s4">
       <input type="text" formControlName="inputNomeTitulacaoAndamento" id="inputNomeTitulacaoAndamento" class="form-control" />
+      <label for="inputNomeTitulacaoAndamento">Informe qual</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="col s12">
-      <label for="inputEstimativaTermino">Estimativa de Término</label>
+    <div class="input-field col s4">
       <input type="text" class="datepicker" formControlName="inputEstimativaTermino" id="inputEstimativaTermino">
+      <label for="inputEstimativaTermino">Estimativa de Término</label>
     </div>
   </div>
   <div class="row">
-    <div class="col s12">
-      <label for="inputPrincipalAtuacaoProfissional">Principal Atuação profissional</label>
+    <div class="input-field col s4">
       <input type="text" name="inputPrincipalAtuacaoProfissional" id="inputPrincipalAtuacaoProfissional" class="form-control">
+      <label for="inputPrincipalAtuacaoProfissional">Principal Atuação profissional</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="col s6">
-      <label for="inputTempoXpProfissional">Tempo de experiência profissional</label>
+    <div class="input-field col s4">
       <input type="text" name="inputTempoXpProfissional" id="inputTempoXpProfissional" class="form-control">
+      <label for="inputTempoXpProfissional">Tempo de exp. profissional</label>
     </div>
-    <div class="col s6">
-        <label for="inputTempoXpMagisterioSuperior">Tempo de experiência em magistério superior</label>
-        <input type="text" name="inputTempoXpMagisterioSuperior" id="inputTempoXpMagisterioSuperior" class="form-control">
+    <div class="input-field col s4">
+      <input type="text" name="inputTempoXpMagisterioSuperior" id="inputTempoXpMagisterioSuperior" class="form-control">
+      <label for="inputTempoXpMagisterioSuperior">Tempo de exp. em magistério superior</label>
     </div>
   </div>
   <div class="row">
-    <div class="col s5">
-      <label for="inputXpDocenciaEducacaoBasica">Tempo de experiência da docência na educação básica: <b class="text-danger">(*)</b></label>
-    </div>
-    <div class="col s2">
+    <div class="input-field col s6">
       <input type="text" name="inputXpDocenciaEducacaoBasica" id="inputXpDocenciaEducacaoBasica" class="form-control">
+      <label for="inputXpDocenciaEducacaoBasica">Tempo de experiência da docência na educação básica:
+        <b class="text-danger">(*)</b>
+      </label>
     </div>
-    <div class="col s5">
-      <label><b class="text-danger">(*) SOMENTE PARA DOCENTES DA ESCOLA DE FORMAÇÃO DE PROFESSORES</b></label>
+    <div class="input-field col s6">
+      <label>
+        <b class="text-danger">(*) SOMENTE PARA DOCENTES DA ESCOLA DE FORMAÇÃO DE PROFESSORES</b>
+      </label>
     </div>
   </div>
   <div class="row">
-    <div class="col s3">
+    <div class="input-field col s4">
+      <input type="text" class="datepicker" formControlName="inputDataAttLattes" id="inputDataAttLattes">
       <label for="inputDataAttLattes">Data última atualização do Lattes</label>
     </div>
-    <div class="col s3">
-      <input type="text" class="datepicker" formControlName="inputDataAttLattes" id="inputDataAttLattes">
-    </div>
-    <div class="col s1">
-      <label for="inputUrlLattes">URL</label>
-    </div>
-    <div class="col s5">
+    <div class="input-field col s8">
       <input type="text" name="inputUrlLattes" id="inputUrlLattes" class="form-control">
+      <label for="inputUrlLattes">URL</label>
     </div>
   </div>
   <div class="row">
-    <div class="col s12">
+    <div class="input-field col s12">
+      <textarea id="inputTxtAreaPublicacoes" class="materialize-textarea" data-length="500"></textarea>
       <label for="inputTxtAreaPublicacoes">Informe as publicações nos últimos 3 anos (Título, Ano e Local de publicação):</label>
-      <textarea id="inputTxtAreaPublicacoes" class="materialize-textarea"></textarea>
     </div>
   </div>
 </form>
