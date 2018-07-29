@@ -9,7 +9,10 @@ import { EditarComponent } from './pages/acount/editar/editar.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { FormDadosPessoaisComponent } from './components/forms/form-dados-pessoais/form-dados-pessoais.component';
 import { FormDadosProfissionaisComponent , } from './components/forms/form-dados-profissionais/form-dados-profissionais.component';
+// tslint:disable-next-line:max-line-length
 import { FormDisciplinasMinistradasComponent } from './components/forms/form-disciplinas-ministradas/form-disciplinas-ministradas.component';
+// tslint:disable-next-line:max-line-length
+import { FormDisciplinasDeInteresseComponent } from './components/forms/form-disciplinas-de-interesse/form-disciplinas-de-interesse.component';
 
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'acount', pathMatch: 'full' },
@@ -36,7 +39,8 @@ export const ROUTES: Routes = [
                 { path: '', redirectTo: 'dados-pessoais', pathMatch: 'full' },
                 { path: 'dados-pessoais', component: FormDadosPessoaisComponent },
                 { path: 'dados-profissionais', component: FormDadosProfissionaisComponent },
-                { path: 'disciplinas-ministradas', component: FormDisciplinasMinistradasComponent }
+                { path: 'disciplinas-ministradas', component: FormDisciplinasMinistradasComponent },
+                { path: 'disciplinas-de-interesse', component: FormDisciplinasDeInteresseComponent }
               ]
             },
         ]

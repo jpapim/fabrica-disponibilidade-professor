@@ -1,3 +1,262 @@
-<p>
-  form-disciplinas-de-interesse works!
-</p>
+
+<span class="card-title center">Disciplinas de Interesse</span>
+<form [formGroup]="disciplinasDeInteresseForm" class="row">
+  <div class="row">OBS.: Faça a indicação da(s) disciplina(s) diante de uma ordem de preferência/domínio da matéria, indicando ainda a(s) unidade(s) em que gostaria de ministrar a(s) aula(s). Indique no mínimo 4(quatro) disciplinas.</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">1º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina1" id="opDisciplina1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina1">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade1" id="opUnidade1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade1">Unidade</label>
+		</div>
+  </div>
+  
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">2º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina2" id="opDisciplina2">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina2">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade2" id="opUnidade2">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade2">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">3º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina3" id="opDisciplina3">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina3">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade3" id="opUnidade3">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade3">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">4º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina4" id="opDisciplina4">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina4">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade4" id="opUnidade4">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade4">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">5º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina1" id="opDisciplina1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina1">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade1" id="opUnidade1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade1">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">6º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina1" id="opDisciplina1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina1">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade1" id="opUnidade1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade1">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">7º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina1" id="opDisciplina1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina1">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade1" id="opUnidade1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade1">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">8º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina1" id="opDisciplina1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina1">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade1" id="opUnidade1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade1">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">9º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina1" id="opDisciplina1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina1">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade1" id="opUnidade1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade1">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s2 m2 l2 xl2">10º Opção</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opDisciplina1" id="opDisciplina1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opDisciplina1">Disciplina</label>
+		</div>
+		<div class="input-field col s5 m5 l5 xl5">
+			<select formControlName="opUnidade1" id="opUnidade1">
+				<option value="" disabled selected>Selecione</option>
+				<option value="1">Sobradinho</option>
+				<option value="1">Ceilândia</option>
+				<option value="1">Taguatinga</option>
+				<option value="1">Guará</option>
+				<option value="1">Taguatinga Norte</option>
+			</select>
+			<label for="opUnidade1">Unidade</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="input-field col s12 m12 l12 xl12">
+			<textarea id="textarea1" class="materialize-textarea"></textarea>
+			<label for="textarea1">Observações</label>
+		</div>
+	</div>
+</form>
