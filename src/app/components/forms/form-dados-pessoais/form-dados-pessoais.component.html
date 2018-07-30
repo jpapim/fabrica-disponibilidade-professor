@@ -1,49 +1,59 @@
-
 <span class="card-title center">Dados Pessoais</span>
 <form [formGroup]="dadosPessoaisForm" (ngSubmit)="teste()" class="row">
-	<div class="input-field col s12 m6 l6 xl4">
-		<i class="fa fa-user-circle prefix"></i>
-		<label for="inputNome">Nome</label>
-		<input type="text" formControlName="inputNome" id="inputNome" class="form-control"  data-length="10"/>
+	<div class="row">
+		<div class="input-field col s12 m6 l6 xl4">
+			<label for="inputNome">Nome</label>
+			<input type="text" formControlName="inputNome" id="inputNome" class="form-control" data-length="10" />
+		</div>
+		<div class="input-field col s12 m6 l6 xl4">
+			<label for="inputSobrenome">Sobrenome</label>
+			<input type="text" formControlName="inputSobrenome" id="inputSobrenome" class="form-control" />
+		</div>
+		<div class="input-field col s12 m4 l4 xl4">
+			<label for="inputApelido">Apelido</label>
+			<input type="text" formControlName="inputApelido" id="inputApelido" class="form-control" />
+		</div>
 	</div>
-	<div class="input-field col s12 m6 l6 xl4">
-		<i class="fa fa-user-circle prefix"></i>
-		<label for="inputSobrenome">Sobrenome</label>
-		<input type="text" formControlName="inputSobrenome" id="inputSobrenome" class="form-control"/>
+	<div class="row">
+		<div class="input-field col s12 m6 l6 xl4">
+			<label for="inputRg">RG</label>
+			<input type="text" name="inputRg" id="inputRg" class="form-control">
+		</div>
+		<div class="input-field col s12 m6 l6 xl4">
+			<label for="inputOrgaoEmissor">Órgão Emissor</label>
+			<input type="text" name="inputOrgaoEmissor" id="inputOrgaoEmissor" class="form-control">
+		</div>
+		<div class="input-field col s12 m4 l6 xl4">
+			<label for="inputCPF">CPF</label>
+			<input type="text" name="inputCpf" id="inputCpf" class="form-control">
+		</div>
 	</div>
-	<div class="input-field col s12 m4 l4 xl4">
-		<i class="fa fa-user-ninja prefix"></i>
-		<label for="inputApelido">Apelido</label>
-		<input type="text" formControlName="inputApelido" id="inputApelido" class="form-control"/>
+	<div class="row">
+		<div class="input-field col s12 m8 l8 xl6">
+			<label for="inputEndereco">Endereço</label>
+			<input type="text" formControlName="inputEndereco" id="inputEndereco" class="form-control" />
+		</div>
+		<div class="input-field col s12 m4 l4 xl3">
+			<label for="inputCEP">CEP</label>
+			<input type="text" formControlName="inputCEP" id="inputCEP" class="form-control" />
+		</div>
+		<div class="input-field col s12 m8 l4 xl3">
+			<label for="inputCidade">Cidade</label>
+			<input type="text" formControlName="inputCidade" id="inputCidade" class="form-control" />
+		</div>
 	</div>
-	<div class="input-field col s12 m8 l8 xl6">
-		<i class="fa fa-home prefix"></i>
-		<label for="inputEndereco">Endereço</label>
-		<input type="text" formControlName="inputEndereco" id="inputEndereco" class="form-control"/>
-	</div>
-	<div class="input-field col s12 m4 l4 xl3">
-		<i class="fa fa-neuter prefix"></i>
-		<label for="inputCEP">CEP</label>
-		<input type="text" formControlName="inputCEP" id="inputCEP" class="form-control"/>
-	</div>
-	<div class="input-field col s12 m8 l4 xl3">
-		<i class="fa fa-map-marked-alt prefix"></i>
-		<label for="inputCidade">Cidade</label>
-		<input type="text" formControlName="inputCidade" id="inputCidade" class="form-control"/>
-	</div>
-	<div class="input-field col s12 m6 l4 xl3">
-		<i class="fa fa-phone prefix"></i>
-		<label for="inputTelefone">Telefone Fixo</label>
-		<input type="text" formControlName="inputTelefone" id="inputTelefone" class="form-control"/>
-	</div>
-	<div class="input-field col s12 m6 l4 xl3">
-		<i class="fa fa-mobile-alt prefix"></i>
-		<label for="inputCelular">Telefone Celular</label>
-		<input type="text" formControlName="inputCelular" id="inputCelular" class="form-control"/>
-	</div>
-	<div class="input-field col s12 m12 l8 xl6">
-		<i class="fa fa-envelope prefix"></i>
-		<label for="inputEmailPessoal">Email pessoal</label>
-		<input type="text" formControlName="inputEmailPessoal" id="inputEmailPessoal" class="form-control"/>
+	<div class="row">
+		<div class="input-field col s12 m6 l4 xl3">
+			<label for="inputTelefone">Telefone Fixo</label>
+			<input type="text" formControlName="inputTelefone" id="inputTelefone" class="form-control" />
+		</div>
+		<div class="input-field col s12 m6 l4 xl3">
+			<label for="inputCelular">Telefone Celular</label>
+			<input type="text" formControlName="inputCelular" id="inputCelular" class="form-control" />
+		</div>
+		<div class="input-field col s12 m12 l8 xl6">
+			<label for="inputEmailPessoal">E-mail pessoal</label>
+			<input type="text" formControlName="inputEmailPessoal" id="inputEmailPessoal" class="form-control" />
+		</div>
 	</div>
 </form>
