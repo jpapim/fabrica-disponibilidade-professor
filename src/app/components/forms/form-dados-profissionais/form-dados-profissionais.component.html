@@ -1,5 +1,5 @@
-<span class="card-title center">
-  Dados Profissionais</span>
+<span class="card-title center">Dados Profissionais</span>
+<hr>
 <form [formGroup]="dadosProfissionaisForm" (ngSubmit)="teste()">
   <div class="row">
     <div class="input-field col s6">
@@ -32,12 +32,12 @@
       <input type="text" class="datepicker" formControlName="inputEstimativaTermino" id="inputEstimativaTermino">
       <label for="inputEstimativaTermino">Estimativa de Término</label>
     </div>
-  </div>
-  <div class="row">
     <div class="input-field col s4">
       <input type="text" name="inputPrincipalAtuacaoProfissional" id="inputPrincipalAtuacaoProfissional" class="form-control">
       <label for="inputPrincipalAtuacaoProfissional">Principal Atuação profissional</label>
     </div>
+  </div>
+  <div class="row">
     <div class="input-field col s4">
       <input type="text" name="inputTempoXpProfissional" id="inputTempoXpProfissional" class="form-control">
       <label for="inputTempoXpProfissional">Tempo de exp. profissional</label>
@@ -46,17 +46,10 @@
       <input type="text" name="inputTempoXpMagisterioSuperior" id="inputTempoXpMagisterioSuperior" class="form-control">
       <label for="inputTempoXpMagisterioSuperior">Tempo de exp. em magistério superior</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="input-field col s6">
+    <div class="input-field col s4">
       <input type="text" name="inputXpDocenciaEducacaoBasica" id="inputXpDocenciaEducacaoBasica" class="form-control">
-      <label for="inputXpDocenciaEducacaoBasica">Tempo de experiência da docência na educação básica:
+      <label for="inputXpDocenciaEducacaoBasica">Tempo de exp. da docência na ed. básica
         <b class="text-danger">(*)</b>
-      </label>
-    </div>
-    <div class="input-field col s6">
-      <label>
-        <b class="text-danger">(*) SOMENTE PARA DOCENTES DA ESCOLA DE FORMAÇÃO DE PROFESSORES</b>
       </label>
     </div>
   </div>
@@ -74,6 +67,11 @@
     <div class="input-field col s12">
       <textarea id="inputTxtAreaPublicacoes" class="materialize-textarea" data-length="500"></textarea>
       <label for="inputTxtAreaPublicacoes">Informe as publicações nos últimos 3 anos (Título, Ano e Local de publicação):</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s8 offset-s4">
+      <b class="text-danger">(*) SOMENTE PARA DOCENTES DA ESCOLA DE FORMAÇÃO DE PROFESSORES</b>
     </div>
   </div>
 </form>

@@ -1,43 +1,47 @@
-
-<span class="card-title center">Disciplinas Ministradas</span>
+<span class="card-title center">
+	Disciplinas Ministradas</span>
+<hr>
 <form [formGroup]="disciplinasMinistradasForm" class="row">
 	<div class="row">
 		<div class="input-field col s12 m12 l12 xl12">
-			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">Carga
-				horária semanal(total) no semestre anterior</label> <input type="text"
-				formControlName="inputNome" id="inputNome" class="form-control"
-				data-length="10" />
+			<i class="fas fa-clock prefix prefix"></i>
+			<label for="inputCargaSemanal">Carga horária semanal(total) no semestre anterior</label>
+			<input type="text" formControlName="inputCargaSemanal" id="inputCargaSemanal" class="form-control" data-length="10" />
 		</div>
 	</div>
-	<div class="row">Carga horária por unidade no semestre anterior</div>
+	<div class="row">
+		<b>Carga horária por unidade no semestre anterior</b>
+	</div>
 	<div class="row">
 		<div class="input-field col s2 m2 l2 xl2">
-			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">CEI</label>
-			<input type="text" formControlName="inputNome" id="inputNome"
-				class="form-control" data-length="10" />
+			<i class="fas fa-clock prefix"></i>
+			<label for="inputCei">CEILÂNDIA</label>
+			<input type="text" formControlName="inputCei" id="inputCei" class="form-control" data-length="10" />
 		</div>
 		<div class="input-field col s2 m2 l2 xl2">
-			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">SOB</label>
-			<input type="text" formControlName="inputNome" id="inputNome"
-				class="form-control" data-length="10" />
+			<i class="fas fa-clock prefix"></i>
+			<label for="inputSob">SOBRADINHO</label>
+			<input type="text" formControlName="inputSob" id="inputSob" class="form-control" data-length="10" />
+		</div>
+		<div class="input-field col s3 m3 l3 xl3">
+			<i class="fas fa-clock prefix"></i>
+			<label for="inputTGN">TAGUATINGA NORTE</label>
+			<input type="text" formControlName="inputTGN" id="inputTGN" class="form-control" data-length="10" />
 		</div>
 		<div class="input-field col s2 m2 l2 xl2">
-			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">TGN</label>
-			<input type="text" formControlName="inputNome" id="inputNome"
-				class="form-control" data-length="10" />
+			<i class="fas fa-clock prefix"></i>
+			<label for="inputGua">GUARÁ</label>
+			<input type="text" formControlName="inputGua" id="inputGua" class="form-control" data-length="10" />
 		</div>
 		<div class="input-field col s2 m2 l2 xl2">
-			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">GUA</label>
-			<input type="text" formControlName="inputNome" id="inputNome"
-				class="form-control" data-length="10" />
-		</div>
-		<div class="input-field col s2 m2 l2 xl2">
-			<i class="fa fa-user-circle prefix"></i> <label for="inputNome">TAG</label>
-			<input type="text" formControlName="inputNome" id="inputNome"
-				class="form-control" data-length="10" />
+			<i class="fas fa-clock prefix"></i>
+			<label for="inputTag">TAGUATINGA</label>
+			<input type="text" formControlName="inputTag" id="inputTag" class="form-control" data-length="10" />
 		</div>
 	</div>
-	<div class="row">Unidade das disciplinas ministradas no semestre anterior</div>
+	<div class="row">
+		<b>Unidade das disciplinas ministradas no semestre anterior</b>
+	</div>
 	<div class="row">
 		<div class="input-field col s2 m2 l2 xl2">MATUTINO</div>
 		<div class="input-field col s2 m2 l2 xl2">
