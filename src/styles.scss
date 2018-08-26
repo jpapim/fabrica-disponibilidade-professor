@@ -39,3 +39,54 @@ html, body{
 .btn-rounded {
     border-radius: 1.8em;
 }
+
+input[type=text] {
+    border-bottom: 1px solid #032a51 !important;
+}
+
+input[type=text]:focus{
+    border-bottom: 1px solid #d93b3b !important;
+    box-shadow: 0 1px 0 0 #d93b3b !important; 
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label{
+    color: #d93b3b !important;
+}
+
+.input-field > label {
+    color: #000000 !important;
+}
+
+.input-field > label:not(.label-icon).active {
+    color: #d93b3b !important;
+}
+
+textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #d93b3b !important;
+    box-shadow:  0 1px 0 0 #d93b3b !important;
+}
+
+.datepicker-date-display {
+    background-color: #032a51 !important;
+}
+
+.datepicker-table td.is-today {
+    color: #032a51 !important;
+    font-weight: 900 !important;
+}
+
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+    color: #032a51 !important;
+}
+
+.datepicker-table td.is-selected {
+    background-color: #d93b3b !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #032a51 !important;
+}
+
+.input-field .prefix.active {
+    color: #d93b3b !important;
+}
