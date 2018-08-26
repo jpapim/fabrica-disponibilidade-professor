@@ -45,12 +45,12 @@ input[type=text] {
 }
 
 input[type=text]:focus{
-    border-bottom: 1px solid #d93b3b !important;
-    box-shadow: 0 1px 0 0 #d93b3b !important; 
+    border-bottom: 1px solid #032a51 !important;
+    box-shadow: 0 1px 0 0 #032a51 !important; 
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]) + label{
-    color: #d93b3b !important;
+    color: #032a51 !important;
 }
 
 .input-field > label {
@@ -58,12 +58,12 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label{
 }
 
 .input-field > label:not(.label-icon).active {
-    color: #d93b3b !important;
+    color: #032a51 !important;
 }
 
 textarea.materialize-textarea:focus:not([readonly]){
-    border-bottom: 1px solid #d93b3b !important;
-    box-shadow:  0 1px 0 0 #d93b3b !important;
+    border-bottom: 1px solid #032a51 !important;
+    box-shadow:  0 1px 0 0 #032a51 !important;
 }
 
 .datepicker-date-display {
@@ -88,5 +88,5 @@ textarea.materialize-textarea:focus:not([readonly]){
 }
 
 .input-field .prefix.active {
-    color: #d93b3b !important;
+    color: #032a51 !important;
 }
